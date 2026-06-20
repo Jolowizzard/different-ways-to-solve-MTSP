@@ -1,8 +1,8 @@
 # Metric Traveling Salesman Problem - algorithms
 
-## Subject of studie
+## Subject of study
 
-PThis program was written for the university course Designing Effective Algorithms. The main goal was to implement various algorithms, design experiments, and empirically analyze the time complexity of the studied algorithms. This repository only contains the implemented algorithms and a program which enables the user to perform tests using configuration files in .json format.
+This program was written for the university course Designing Effective Algorithms. The main goal was to implement various algorithms, design experiments, and empirically analyze the time complexity of the studied algorithms. This repository only contains the implemented algorithms and a program which enables the user to perform tests using configuration files in .json format.
 
 ## Implemented algorithms
 
