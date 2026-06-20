@@ -1,0 +1,58 @@
+# Private output folders
+wyniki_csv/
+zadanie_1_wyniki/
+zadanie2_wyniki/
+zadanie3_wyniki/
+zadanie4_wyniki/
+
+# Private output files
+*.csv
+
+# Private input folders
+zadanie1-konfiguracje/
+zadanie2_konfiguracje/
+zadanie3_konfiguracje/
+zadanie4_grafy/
+zadanie4_konfiguracje/
+graphs/
+konfiguracje/
+grafy_do_testow/
+do_wykorzystania_konfiguracje/
+
+# Private files
+ResearchPlan*
+Zapiski*
+run_tests.sh
+
+# build and build-win
+build/
+build-win/
+
+# CMake cache
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+*.cmake
+
+# Compiled binary files and libraries
+*.o
+*.a
+*.so
+*.dylib
+*.exe
+graph_algorithms
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+*.sublime-project
+*.sublime-workspace
+.DS_Store
+
+# Redundant files
+kompilacja_windows.txt
+
