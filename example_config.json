@@ -1,0 +1,106 @@
+{
+    "tests":[
+    {
+      "description" : "graph: path to graph (can be relative), repetitions: number of repetitions for test, algorithms: algorithms that are being tested",
+      "graph": "example/path/to/graph/somegraph1234.tsp",
+      "repetitions": 4,
+      "algorithms": [
+        {
+          "description" : "genetic_algorithm, wymaga parametry : executionTime, populationSize, parentSize, offspringSize, mutationRate, crossoverRate, tournamentSize, iterationsWithNoImprovement, acceptanceLevel, opt ",
+          "name": "genetic_algorithm",
+          "params":{
+            "executionTime":"900",
+            "populationSize":"500",
+            "parentSize":"300",
+            "offspringSize":"500",
+            "mutationRate":"0.65",
+            "crossoverRate":"1.00",
+            "tournamentSize":"3",
+            "iterationsWithNoImprovement":"10000",
+            "acceptanceLevel":"0.0",
+            "opt":"234256"
+          }
+        },
+        {
+          "description" : "DFS, requires : findUpperBound - computed earlier using NN, maxMemoryUsageMB - stops the algorithm when exceeded, maxRunningTime, repetetive and ties - params for using NN",
+          "name": "depth_first_search",
+          "params":{
+            "findUpperBound":"0",
+            "maxMemoryUsageMB":"10000",
+            "maxRunningTime":"800",
+            "repetetive":"1",
+            "ties":"1"
+          }
+        },
+      {
+          "description" : "BFS, requires : findUpperBound - computed earlier using NN, maxMemoryUsageMB - stops the algorithm when exceeded, maxRunningTime, repetetive and ties - params for using NN",
+          "name": "breath_first_search",
+          "params":{
+            "findUpperBound":"0",
+            "maxMemoryUsageMB":"10000",
+            "maxRunningTime":"800",
+            "repetetive":"1",
+            "ties":"1"
+          }
+      },        
+      {
+          "description" : "LC, requires : findUpperBound - computed earlier using NN, maxMemoryUsageMB - stops the algorithm when exceeded, maxRunningTime, repetetive and ties - params for using NN",
+          "name": "lowest_cost_search",
+          "params":{
+            "findUpperBound":"1",
+            "maxMemoryUsageMB":"10000",
+            "maxRunningTime":"800",
+            "repetetive":"1",
+            "ties":"1"
+          }
+        },
+      {
+          "description" : "nearestNeighbour, requires : startVertex - wierzcholek rozpoczecia algorytmu, repetetive : should it be RNN",
+          "name": "nearestNeighbour",
+          "params":{
+            "startVertex":"0",
+            "repetetive":"1",
+            "randomStart":"0",
+            "ties":"0"
+          }
+      },
+      {
+        "name": "bruteForce"
+      },
+      {
+        "name": "random",
+        "params":{
+          "executionTime" : "450"
+        }
+      },
+      {
+        "description" : "tabu_search, requires : executionTime, cadentionTime, findUB, acceptanceLevel and opt - params used for testing relative error, iterationsWithNoImprovement - one o the stop criteria",
+        "name": "tabu_search",
+        "params":{
+          "findUB":"1",
+          "executionTime":"900",
+          "cadentionTime":"3",
+          "iterationsWithNoImprovement":"1000000",
+          "acceptanceLevel":"0.0",
+          "opt":"289"
+        }
+      },
+      {
+        "description" : "tabu_search complex, requires : executionTime, cadentionTime, findUB, tabuListSize, iterationsToChangeSize - size changes with number of iterations without improving UB",
+        "name": "tabu_search_complex",
+        "params":{
+          "findUB":"1",
+          "executionTime":"900",
+          "cadentionTime":"3",
+          "iterationsWithNoImprovement":"1000000",
+          "acceptanceLevel":"0.0",
+          "tabuListSize":"3",
+          "iterationsToChangeSize":"300",
+          "opt":"289"
+          }
+      }
+    ]
+    }
+    ]
+}
+
